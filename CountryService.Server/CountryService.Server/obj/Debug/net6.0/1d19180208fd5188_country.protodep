@@ -1,0 +1,5 @@
+obj\Debug\net6.0\protos\v2/Country.cs \
+obj\Debug\net6.0\protos\v2/CountryGrpc.cs: C:/Users/A.Farrokhi/.nuget/packages/grpc.tools/2.45.0/build/native/include/google/protobuf/empty.proto\
+ C:/Users/A.Farrokhi/.nuget/packages/grpc.tools/2.45.0/build/native/include/google/protobuf/timestamp.proto\
+ Protos/model/models.proto\
+ protos/v2/country.proto

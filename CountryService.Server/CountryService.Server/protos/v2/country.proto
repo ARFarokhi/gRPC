@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package country.v2;
+
+option csharp_namespace = "CountryService.Web.Protos.v2";
+
+import "google/protobuf/empty.proto";
+import "google/protobuf/timestamp.proto";
+import "Protos/model/models.proto";
+
+service CountryService {
+	//server-stream
+	rpc GetAll(google.protobuf.Empty) returns (stream models.CountryReply) {}
+	//unary
+	rpc Get(models.CountryIdRequest) returns (models.CountryReply) {}
+	//client-stream
+	//rpc Delete(stream CountryIdRequest) returns (google.protobuf.Empty) {}
+	//unary
+	rpc Update(models.CountryUpdateRequest) returns (google.protobuf.Empty) {}
+	//bidirectional-Duplex
+	rpc Create(stream models.CountryCreationRequest) returns (stream models.CountryCreationReply) {}
+}

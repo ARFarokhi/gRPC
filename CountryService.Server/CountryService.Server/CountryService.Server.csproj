@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="protos\model\models.proto" />
+    <None Remove="protos\v1\country.proto" />
+    <None Remove="protos\v2\country.proto" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf Include="protos\v2\country.proto" GrpcServices="Server" />
+  </ItemGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="Calzolari.Grpc.AspNetCore.Validation" Version="6.1.1" />
+	  <PackageReference Include="Grpc.AspNetCore" Version="2.45.0" />
+	  <PackageReference Include="Grpc.AspNetCore.Server.Reflection" Version="2.45.0" />
+	  <PackageReference Include="Microsoft.Data.SqlClient" Version="4.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf Include="protos\model\models.proto" GrpcServices="Server" />
+    <Protobuf Include="protos\v1\country.proto" GrpcServices="Server" />
+  </ItemGroup>
+
+</Project>

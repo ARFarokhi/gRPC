@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "4cfjCRppgvM7lStQXPJr8GommGytUyhLWRzYuk+fhkk=",
+  "Source": "CountryService.Server",
+  "BasePath": "_content/CountryService.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
